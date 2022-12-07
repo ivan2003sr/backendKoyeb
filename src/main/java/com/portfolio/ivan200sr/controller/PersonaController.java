@@ -10,11 +10,12 @@ import java.util.List;
 
 @RestController
 @CrossOrigin(origins = "https://frontend-ivan.web.app")
+//@CrossOrigin(origins = "http://localhost:4200")
 public class PersonaController {
     @Autowired
     IPersonaService iPersonaService;
 
-    @GetMapping("usuarios/traer")
+    @GetMapping("/usuarios/traer")
     public List<Persona> gerPersona(){
         return iPersonaService.getPersona();
     }

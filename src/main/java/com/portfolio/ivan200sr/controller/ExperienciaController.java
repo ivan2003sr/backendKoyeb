@@ -17,6 +17,7 @@ import java.util.List;
 @Controller
 @RequestMapping("/explab")
 @CrossOrigin(origins = "https://frontend-ivan.web.app")
+//@CrossOrigin(origins = "http://localhost:4200")
 public class ExperienciaController {
     @Autowired
     ImpExperienciaService impExperienciaService;
