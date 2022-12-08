@@ -15,8 +15,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/skill")
-@CrossOrigin(origins = "https://frontend-ivan.web.app")
-//@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = {"https://frontend-ivan.web.app","http://localhost:4200"})
 public class HySController {
     @Autowired
     ImpHySService impHySService;

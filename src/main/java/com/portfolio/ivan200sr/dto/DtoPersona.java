@@ -1,50 +1,31 @@
-package com.portfolio.ivan200sr.entity;
+package com.portfolio.ivan200sr.dto;
 
-import lombok.Getter;
-import lombok.Setter;
-
-import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
+public class DtoPersona {
 
-@Entity
-public class Persona {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
-    @NotNull
-    @Size(min=1,max=50,message = "No cumple con la longitud mínima (1) o máxima (50)")
+    @NotBlank
     private String nombre;
-    @NotNull
-    @Size(min=1,max=50,message = "No cumple con la longitud mínima (1) o máxima (50)")
+    @NotBlank
     private String apellido;
-
-    @NotNull
+    @NotBlank
     private String descripcion;
-
-    @Size(min=1,max=255,message = "No cumple con la longitud mínima (1) o máxima (500)")
+    @NotBlank
     private String img;
 
-    public Persona() {
+    public DtoPersona() {
     }
 
-    public Persona(String nombre, String apellido, String descripcion, String img) {
+    public DtoPersona(String nombre, String apellido, String descripcion, String img) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.descripcion = descripcion;
         this.img = img;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public String getNombre() {
