@@ -41,11 +41,11 @@ public class MainSecurity {
 
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity httpSecurity) throws Exception {
-        // We don't need CSRF for this example
+  // We don't need CSRF for this example
         httpSecurity.csrf().disable()
-                // don't authenticate this particular request
+  // don't authenticate this particular request
                 .authorizeHttpRequests().antMatchers("**").permitAll()
-                // all other requests need to be authenticated
+                 // all other requests need to be authenticated
                 .anyRequest().authenticated().and()
                 // make sure we use stateless session; session won't be used to
                 // store user's state.
