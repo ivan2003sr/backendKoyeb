@@ -1,4 +1,4 @@
-FROM eclipse-temurin:11
+FROM eclipse-temurin:17
 MAINTAINER ivan200sr
-COPY target/Backend.jar Backend.jar
+COPY target/ivan200sr.jar Backend.jar
 ENTRYPOINT ["java","-jar","/Backend.jar"]
