@@ -1,4 +1,4 @@
-FROM eclipse-temurin:17
+FROM eclipse-temurin:17-jdk-jammy
 
 copy target/ivan200sr.jar api.jar
 
