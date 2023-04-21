@@ -1,9 +1,7 @@
 package com.portfolio.ivan200sr.service;
 
 import com.portfolio.ivan200sr.entity.Educacion;
-import com.portfolio.ivan200sr.entity.Experiencia;
 import com.portfolio.ivan200sr.repository.IEducacionRepo;
-import com.portfolio.ivan200sr.repository.IExperienciaRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

@@ -1,7 +1,6 @@
 package com.portfolio.ivan200sr.repository;
 
 import com.portfolio.ivan200sr.entity.Educacion;
-import com.portfolio.ivan200sr.entity.Experiencia;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

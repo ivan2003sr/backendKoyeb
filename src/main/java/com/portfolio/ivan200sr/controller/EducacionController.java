@@ -2,11 +2,8 @@ package com.portfolio.ivan200sr.controller;
 
 
 import com.portfolio.ivan200sr.dto.DtoEducacion;
-import com.portfolio.ivan200sr.dto.DtoEducacion;
-import com.portfolio.ivan200sr.entity.Educacion;
 import com.portfolio.ivan200sr.entity.Educacion;
 import com.portfolio.ivan200sr.security.Controller.Mensaje;
-import com.portfolio.ivan200sr.service.ImpEducacionService;
 import com.portfolio.ivan200sr.service.ImpEducacionService;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
