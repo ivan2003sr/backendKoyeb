@@ -10,11 +10,11 @@
 	</parent>
 	<groupId>com.ivan</groupId>
 	<artifactId>ivan200sr</artifactId>
-	<version>1</version>
+	<version>0.0.1-SNAPSHOT</version>
 	<name>ivan200sr</name>
 	<description>Portfolio Ivan</description>
 	<properties>
-		<java.version>11</java.version>
+		<java.version>17</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
